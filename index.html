@@ -3,27 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ДЗ №16</title>
+    <title>ToDo App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="package">
-        <div class="header">
-            <h2 style="margin:5px">My To Do List</h2>
-            <input type="text" id="myInput" placeholder="Title...">
-            <span class="addBtn" id="addBtn">Add</span>
-        </div>
-        <div id="package_list">
-            <ul id="list">
-
-            </ul>
-        </div>
-        <div>
-            <button id="clear_all">Clear all</button>
-        </div>
-        <script src="script.js"></script>
-    </div>
+    <h1>ToDo App</h1>
+    <form id="form">
+       <input type="text"
+              id="input" class="input"
+              placeholder="What you need to do..."
+              autocomplete="off">
+       <ul class="todos" id="todos"></ul>
+    </form> 
+    <button class="btn" id="btn">Delet all</button>
+    <small>Click with two fingers to delete the todo.</small>
+    <script src="script2.js"></script>
 </body>
-
 </html>
