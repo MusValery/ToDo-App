@@ -15,7 +15,17 @@ body {
     color: #444;
 }
 
-form {
+.submit {
+    cursor: pointer;
+    background-color: rgb(149, 182, 135);
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 525px;
+    float: left;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
+}
+
+.form {
     box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
     margin: 0;
     max-width: 100%;
@@ -27,7 +37,7 @@ form {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     display: block;
-    width: 100%;
+    width: 85%;
     color: #444;
 }
 
@@ -40,7 +50,7 @@ form {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    border-radius: 8px;
+
     width: 515px;
 }
 
@@ -49,17 +59,18 @@ form {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
-button {
+.btn {
     cursor: pointer;
     background-color: rgb(241, 205, 195);
     font-size: 17px;
-    margin-left: 500px;
+    margin-left: 525px;
     margin-top: 8px;
     box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
 }
+
 .todos li.completed {
     color: rgba(255, 0, 0, 0.3);
     text-decoration: line-through;

@@ -2,7 +2,10 @@ const form = document.getElementById('form');
 const input = document.getElementById('input');
 const todosUl = document.getElementById('todos');
 const todos = JSON.parse(localStorage.getItem('todos'));
-const button = document.getElementById("btn");
+const button = document.getElementById('btn');
+const submit = document.getElementById('submitBtn');
+
+submit.addEventListener('click', addTodo);
 
 if (todos) {
    todos.forEach((todo) => {
