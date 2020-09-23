@@ -1,5 +1,5 @@
 {
-  "name": "hillel-group",
+  "name": "webpack1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/NativeJedi/Hillel-group#readme",
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -30,7 +31,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.21.2",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
-    "numeral": "^2.0.6"
+    "numeral": "^2.0.6",
+    "uuidv4": "^6.2.3"
   }
 }

@@ -3,28 +3,22 @@ const input = document.getElementById('input');
 const todosUl = document.getElementById('todos');
 const todos = JSON.parse(localStorage.getItem('todos'));
 const button = document.getElementById('btn');
-const submit = document.getElementById('submitBtn');
-
-submit.addEventListener('click', addTodo);
 
 if (todos) {
    todos.forEach((todo) => {
-      addTodo(todo)
+      addTodo(todo.text)
    });
 }
 
 form.addEventListener('submit', (e) => {
    e.preventDefault();
 
-   addTodo();
+   addTodo(input.value);
 });
 
-function addTodo(todo) {
-   let todoText = input.value;
+function addTodo() {
+   const todoText = todo ? todo.text : input.value;
 
-   if (todo) {
-      todoText = todo.text;
-   }
 
    if (todoText) {
       const elementLi = document.createElement('li');
@@ -54,7 +48,7 @@ function addTodo(todo) {
 
       updateLS();
    }
-}
+} 
 
 function updateLS() {
    const todosEl = document.querySelectorAll('li');

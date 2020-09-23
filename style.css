@@ -37,7 +37,7 @@ body {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     display: block;
-    width: 85%;
+    width: 88%;
     color: #444;
 }
 
@@ -62,7 +62,7 @@ body {
     border-radius: 3px;
 }
 
-.btn {
+.btn-delete {
     cursor: pointer;
     background-color: rgb(241, 205, 195);
     font-size: 17px;
@@ -80,4 +80,23 @@ small {
     color: #b5b5b5;
     margin-top: 3rem;
     text-align: center;
+}
+
+.btn-group button{
+    cursor: pointer;
+    background-color: rgb(223, 233, 232);
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.li-btn {
+    margin-left: auto;
+}
+
+.todoBtn {
+    width: 520px;
+}
+
+.btn-edit, .btn-delete_outline {
+    background-color: rgb(204, 240, 218);
 }

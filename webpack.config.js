@@ -1,9 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: 'script2.js',
+  entry: 'index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.bundle.js',
@@ -54,14 +53,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'),
     }),
-
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.join(__dirname, 'src/public'),
-          to: path.join(__dirname, 'dist/public'),
-        },
-      ],
-    }),
-  ],
+  ]
 };
