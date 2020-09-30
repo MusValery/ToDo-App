@@ -1,0 +1,84 @@
+h1 {
+    color: #0B2F3A;
+    text-align: center;
+    font-size: 3em;
+}
+
+body {
+    background-color: beige;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #444;
+}
+
+.todo-app__submit {
+    cursor: pointer;
+    background-color: rgb(149, 182, 135);
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 525px;
+    float: left;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app__form {
+    margin: 0;
+    max-width: 100%;
+    width: 600px;
+}
+
+#input {
+    border: none;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 88%;
+    color: #444;
+}
+
+#input::placeholder {
+    color: #d5d5d5;
+}
+
+#list {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 515px;
+}
+
+#list li {
+    border-top: solid #e5e5e5;
+    font-size: 0.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#list li.completed {
+    color: rgba(255, 0, 0, 0.3);
+    text-decoration: line-through;
+}
+
+.btn-outline-primary {
+    cursor: pointer;
+    background-color: rgb(135, 201, 193);
+    font-size: 15px;
+}
+
+.li-btn {
+    margin-left: auto;
+}
+
+.todo-list__controls {
+    width: 520px;
+}
+
+.btn-sm {
+    background-color: rgb(204, 240, 218);
+}
